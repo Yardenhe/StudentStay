@@ -13,7 +13,7 @@ export function ReserveBtn({ text, cb }) {
     setMousePosition({ x, y });
   }
 
-  let dynamicGradient = `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%,#FF385C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%)`
+  let dynamicGradient = `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%,#FFAC1C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%)`
   return (
     <button
       onMouseMove={handleMouseMove}
