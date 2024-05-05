@@ -11,13 +11,13 @@ export function LocationModal({ onSetFilter }) {
         { url: 'https://a0.muscache.com/im/pictures/ea5598d7-2b07-4ed7-84da-d1eabd9f2714.jpg?im_w=320', label: 'Italy' },
     ];
     const locations = [
-        { id: 1, name: 'Turkey', imgUrl: '../img/general-icons/location.svg' },
-        { id: 2, name: 'Spain', imgUrl: '../img/general-icons/location.svg' },
-        { id: 3, name: 'Brazil', imgUrl: '../img/general-icons/location.svg' },
+        { id: 1, name: 'Spain', imgUrl: '../img/general-icons/location.svg' },
+        { id: 2, name: 'Israel', imgUrl: '../img/general-icons/location.svg' },
+        { id: 3, name: 'United States', imgUrl: '../img/general-icons/location.svg' },
         { id: 4, name: 'Portugal', imgUrl: '../img/general-icons/location.svg' },
-        { id: 5, name: 'United States', imgUrl: '../img/general-icons/location.svg' },
-        { id: 6, name: 'Canada', imgUrl: '../img/general-icons/location.svg' }
-        // Add more locations as needed
+        { id: 5, name: 'Turkey', imgUrl: '../img/general-icons/location.svg' },
+        { id: 6, name: 'Hong Kong', imgUrl: '../img/general-icons/location.svg' }
+
     ];
     const [filterByToEdit, setFilterByToEdit] = useState({});
     useEffectUpdate(() => {

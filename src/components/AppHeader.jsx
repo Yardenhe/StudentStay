@@ -122,7 +122,7 @@ export function AppHeader() {
                         {isOpenFilter && <div className="overlay" onClick={onToggleEffect}></div>}
                         <header className={'app-header'} >
                             <Link to="/" onClick={handleReloadClick}>
-                                <img className="app-header-logo" src="../img/VisitBnbByDazen2.jpg" />
+                                <img className="app-header-logo" src="../img/logoBgu.png" />
                             </Link>
                             {(!location.pathname.includes('book') && !location.pathname.includes('order')) ?
                                 <section className={`date-picker left${isOpenEffect ? ' enlarge' : ' '}`} onClick={onToggleEffect}>
@@ -141,7 +141,7 @@ export function AppHeader() {
                             }
                             <section className='right-header-menu'>
                                 <div className='switchlen-menu'>
-                                    <Link to="/edit"> <button>Airbnb your home</button></Link>
+                                    <Link to="/edit"> <button>Publish your home</button></Link>
                                     <LuGlobe className='global-btn' />
                                 </div>
                                 <div className='menu-bar' onClick={() => { onToggleUserModal() }}>
@@ -159,7 +159,7 @@ export function AppHeader() {
                         <header className={`app-header-filter${isOpenFilter ? ' show-explore' : ' slideOut'}`}>
                             <section className="app-header grid-app-header">
                                 <Link to="/" onClick={handleReloadClick}>
-                                    <img className="app-header-logo" src="../img/VisitBnbByDazen2.jpg" />
+                                    <img className="app-header-logo" src="../img/logoBgu.png" />
                                 </Link>
                                 <section className='app-mini-menu'>
                                     <section >Stays</section>
@@ -171,7 +171,7 @@ export function AppHeader() {
                                 <section className='right-header-menu'>
                                     <div className='switchlen-menu'>
 
-                                        <Link to="/edit"> <button>Airbnb your home</button></Link>
+                                        <Link to="/edit"> <button>Publish your home</button></Link>
                                         <LuGlobe className='global-btn' />
                                     </div>
                                     <div className='menu-bar' onClick={() => onToggleUserModal()}> <IoMdMenu className='menu-icon' />
