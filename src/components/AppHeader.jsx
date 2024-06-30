@@ -126,13 +126,13 @@ export function AppHeader() {
                             </Link>
                             {(!location.pathname.includes('book') && !location.pathname.includes('order')) ?
                                 <section className={`date-picker left${isOpenEffect ? ' enlarge' : ' '}`} onClick={onToggleEffect}>
-                                    <section className='btn-datepicker bold anywhere-label '>{country ? country : 'Anywhere'}  </section>
+                                    <section className='btn-datepicker bold anywhere-label '>{country ? country : 'ChoosePlace'}  </section>
                                     <span className={`vl-left`}></span>
 
-                                    <section className='btn-datepicker bold any-week-label'>{startDate && endDate ? (utilService.formatOrderDate(startDate) + " - " + utilService.formatOrderDate(endDate)) : 'Any week'}</section>
+                                    <section className='btn-datepicker bold any-week-label'>{startDate && endDate ? (utilService.formatOrderDate(startDate) + " - " + utilService.formatOrderDate(endDate)) : 'ChooseDate'}</section>
                                     <span className={`vl-right`}></span>
                                     <section className={`btn-datepicker add-guests-label ${guests.adults > 1 ? ' bold-choose-guests' : ''}`}>
-                                        <div>{guests.adults > 1 ? guests.adults + " guests" : 'Add guests'}</div>
+                                        <div>{guests.adults > 1 ? guests.adults + " guests" : 'guests'}</div>
                                         <IoSearch className='search-btn' />
                                     </section>
 
@@ -162,9 +162,9 @@ export function AppHeader() {
                                     <img className="app-header-logo" src="../img/logoBgu.png" />
                                 </Link>
                                 <section className='app-mini-menu'>
-                                    <section >Stays</section>
+                                    {/* <section >Stays</section>
                                     <section >Experience</section>
-                                    <section >Online Experience </section>
+                                    <section >Online Experience </section> */}
                                 </section>
 
 

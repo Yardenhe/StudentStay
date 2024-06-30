@@ -66,7 +66,7 @@ export function StayEdit() {
     return (
         <section className="stay-edit">
             <section className="edit-header">
-                <Link to="/">  <img src="../img/general-icons/airbnbBlack.svg" ></img></Link>
+                {/* <Link to="/">  <img src="../img/general-icons/airbnbBlack.svg" ></img></Link> */}
                 {/* <h1>{stayId ? 'Edit' : 'Add'} Stay</h1> */}
             </section>
             <section className="edit-main">

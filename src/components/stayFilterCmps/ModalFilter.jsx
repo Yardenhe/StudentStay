@@ -212,13 +212,13 @@ export function ModalFilter({ isOpen, onClose, setFilterByToEdit, filterByToEdit
                         </div>
 
                     </div>
-                    <div className='stay-property'>
+                    {/* <div className='stay-property'>
                         <h4 className='bold'>Property Type</h4>
                         <PropertyFilter
                             selectedProperty={selectedProperties}
                             onPropertyChange={setSelectedProperties}
                         />
-                    </div>
+                    </div> */}
                     <div className='stay-ammenities'>
                         <h4 className='bold'>Amenities</h4>
 

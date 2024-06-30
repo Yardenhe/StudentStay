@@ -71,7 +71,7 @@ export function StayFilter({ filterBy, onSetFilter }) {
 
     return (
         <section className={`stay-filter ${isSticky && ' sticky'}${!isOpenFilterModal && ' low-z-index'}`}>
-            <IoIosArrowBack className={`arrow arrow-left  ${!arrowVisibility.left && ' hidden'}`} onClick={() => handleScroll('left')} />
+            {/* <IoIosArrowBack className={`arrow arrow-left  ${!arrowVisibility.left && ' hidden'}`} onClick={() => handleScroll('left')} /> */}
             <div className='scroll-container' ref={scrollContainerRef}>
                 {iconNames.map((iconName, index) => (
                     <section className={`stay-icon ${clickedIconIndex === index ? 'hover-icon' : ''}`}
@@ -83,9 +83,9 @@ export function StayFilter({ filterBy, onSetFilter }) {
                     </section>
                 ))}
             </div>
-            <IoIosArrowForward
+            {/* <IoIosArrowForward
                 className={`arrow arrow-right ${!arrowVisibility.right && 'hidden'}`}
-                onClick={() => handleScroll('right')} />
+                onClick={() => handleScroll('right')} /> */}
             <div className='filter-button' onClick={() => onToggleFilterModal()}>
                 <BsSliders className='bold-icon' />
                 <p>Filters</p>
